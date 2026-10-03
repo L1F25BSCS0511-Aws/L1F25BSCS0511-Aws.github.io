@@ -13,7 +13,7 @@ box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:en
 html{scroll-behavior:smooth;scroll-padding-top:70px}
 body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;-webkit-font-smoothing:antialiased}
 a{color:inherit;text-decoration:none}
-.w{max-width:880px;margin:0 auto;padding:0 22px}
+.w{max-width:1180px;margin:0 auto;padding:0 24px}
 .mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
 header{position:sticky;top:env(safe-area-inset-top,0px);z-index:9;background:color-mix(in srgb,var(--bg) 85%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
 nav{display:flex;justify-content:space-between;align-items:center;height:56px;font-size:14px}
@@ -21,13 +21,19 @@ nav b{font-weight:600}
 nav div{display:flex;gap:22px;align-items:center;color:var(--mute)}
 nav a:hover{color:var(--ink)}
 nav button{background:none;border:1px solid var(--line);color:var(--mute);border-radius:8px;width:32px;height:28px;cursor:pointer}
-@media(max-width:600px){nav div a{display:none}}
-.hero{padding:110px 0 90px}
+@media(max-width:700px){nav div a{display:none}}
+.shell{display:grid;grid-template-columns:minmax(0,1fr)}
+.side{padding:90px 0 60px}
+@media(min-width:1000px){
+.shell{grid-template-columns:380px minmax(0,1fr);gap:72px}
+.side{position:sticky;top:calc(56px + env(safe-area-inset-top,0px));align-self:start;padding:72px 0 40px}
+main section:first-child{border-top:0;padding-top:72px}
+}
 .tag{display:inline-block;color:var(--ac);font-size:13px;margin-bottom:22px}
-h1{font-size:clamp(2.6rem,8.5vw,5rem);line-height:1.02;letter-spacing:-.045em;margin:0 0 22px;font-weight:700}
+h1{font-size:clamp(2.6rem,8.5vw,3.6rem);line-height:1.04;letter-spacing:-.045em;margin:0 0 22px;font-weight:700}
 h1 span{color:var(--mute)}
-.lead{max-width:560px;color:var(--mute);font-size:1.12rem;margin:0}
-.acts{display:flex;flex-wrap:wrap;gap:10px;margin-top:34px}
+.lead{color:var(--mute);font-size:1.08rem;margin:0;max-width:560px}
+.acts{display:flex;flex-wrap:wrap;gap:10px;margin-top:30px}
 .b{padding:10px 18px;border-radius:999px;border:1px solid var(--line);font-size:14px;font-weight:500;transition:.2s}
 .b:hover{border-color:var(--ac);color:var(--ac)}
 .b.p{background:var(--ink);color:var(--bg);border-color:var(--ink)}
@@ -52,6 +58,7 @@ h2::before{content:"/ ";color:var(--ac)}
 @media(max-width:560px){.sk{grid-template-columns:1fr;gap:2px}.sk span:nth-child(even){margin-bottom:12px}}
 .tl{border-left:1px solid var(--line);padding-left:24px;margin-left:4px}
 .it{position:relative;margin-bottom:30px}
+.it:last-child{margin-bottom:0}
 .it::before{content:"";position:absolute;left:-29px;top:9px;width:9px;height:9px;border-radius:50%;background:var(--bg);border:2px solid var(--ac)}
 .it b{font-weight:600}
 .it .d{display:block;font-size:12.5px;color:var(--mute);margin:2px 0 6px}
@@ -65,16 +72,17 @@ footer{padding:36px 0 56px;border-top:1px solid var(--line);color:var(--mute);fo
 </style>
 </head>
 <body>
-<header><div class="w"><nav><b>aws<span style="color:var(--ac)">.</span>dev</b><div><a href="#work">Work</a><a href="#stack">Stack</a><a href="#exp">Experience</a><a href="#contact">Contact</a><button id="t" aria-label="Toggle theme">◐</button></div></nav></div></header>
+<header><div class="w"><nav><b>aws<span style="color:var(--ac)">.</span>dev</b><div><a href="#work">Work</a><a href="#stack">Stack</a><a href="#exp">Experience</a><a href="#edu">Education</a><a href="#contact">Contact</a><button id="t" aria-label="Toggle theme">◐</button></div></nav></div></header>
 
-<main class="w">
-<div class="hero">
+<div class="w shell">
+<aside class="side">
 <span class="tag mono">Full-Stack Developer &amp; CS Undergraduate</span>
 <h1>Aws Hameed.<br><span>I turn ideas into working software.</span></h1>
 <p class="lead">3rd-semester Computer Science student building scalable web architectures, AI-integrated applications, and automated Python workflows.</p>
-<div class="acts"><a class="b p" href="#work">View my work</a><a class="b" href="resume.pdf"download>Download resume</a><a class="b" href="https://github.com/L1F25BSCS0511-Aws" target="_blank" rel="noopener">GitHub ↗</a><a class="b" href="https://www.linkedin.com/in/awshameeed/" target="_blank" rel="noopener">LinkedIn ↗</a></div>
-</div>
+<div class="acts"><a class="b p" href="#work">View my work</a><a class="b" href="resume.pdf" download>Download resume</a><a class="b" href="https://github.com/L1F25BSCS0511-Aws" target="_blank" rel="noopener">GitHub ↗</a><a class="b" href="https://www.linkedin.com/in/awshameeed/" target="_blank" rel="noopener">LinkedIn ↗</a></div>
+</aside>
 
+<main>
 <section id="about"><h2 class="mono">About</h2>
 <p style="max-width:600px;margin:0 0 14px">I'm a BSCS undergraduate at the University of Central Punjab in Lahore, pairing academic fundamentals with production-level experience. I work remotely as a Digital Growth Specialist at SYNAPSEBIZ, focusing on full-stack deployment, Python automation, and object-oriented design.</p>
 <p style="max-width:600px;margin:0;color:var(--mute)">I like solving real engineering problems: a Linux VPS CI/CD pipeline, a single-file AI web app, a sturdy e-commerce backend.</p></section>
@@ -95,22 +103,26 @@ footer{padding:36px 0 56px;border-top:1px solid var(--line);color:var(--mute);fo
 <span>AI &amp; Automation</span><span>Google AI Studio, Whisper, edge-tts, MoviePy, Make.com</span>
 <span>Tools</span><span>Git/GitHub, Shopify Liquid, openpyxl, pandas</span></div></section>
 
-<section id="exp"><h2 class="mono">Experience &amp; education</h2><div class="tl">
+<section id="exp"><h2 class="mono">Experience</h2><div class="tl">
 <div class="it"><b>Digital Growth Specialist · SYNAPSEBIZ</b><span class="d mono">Apr 2026 — Present</span><p>Technical data tracking, process automation, and platform growth strategy, remotely.</p></div>
-<div class="it"><b>AI/ML Intern · Digitech Offerings</b><span class="d mono">Apr — Jun 2026</span><p>Three-month remote internship in practical ML, automated workflows, and AI model evaluation.</p></div>
-<div class="it"><b>BSCS · University of Central Punjab</b><span class="d mono">Lahore · Expected 2029</span><p>OOP, Data Structures, Web Development, Database Systems. Led the “Beyond the Blindspot” community service project.</p></div></div></section>
+<div class="it"><b>AI/ML Intern · Digitech Offerings</b><span class="d mono">Apr — Jun 2026</span><p>Three-month remote internship in practical ML, automated workflows, and AI model evaluation.</p></div></div></section>
+
+<section id="edu"><h2 class="mono">Education</h2><div class="tl">
+<div class="it"><b>BSCS · University of Central Punjab</b><span class="d mono">Lahore · Expected 2029</span><p>OOP, Data Structures, Web Development, Database Systems. Led the “Beyond the Blindspot” community service project.</p></div>
+<div class="it"><b>Aspire College</b><span class="d mono">2023 — 2025</span></div>
+<div class="it"><b>British International School System</b></div></div></section>
 
 <section id="contact"><h2 class="mono">Contact</h2>
 <p style="margin:0">Lahore, Pakistan · <a href="mailto:awshameed.dev@gmail.com" style="color:var(--ac)">awshameed.dev@gmail.com</a></p>
 <form id="f"><input id="n" placeholder="Name" required><input id="e" type="email" placeholder="Email" required><textarea id="m" placeholder="Message" required></textarea><button class="b p s" type="submit">Send message</button></form></section>
 </main>
+</div>
 <footer><div class="w mono">© 2026 Aws Hameed</div></footer>
 
 <script>
 document.querySelectorAll('.t').forEach(function(c){c.addEventListener('mousemove',function(e){var r=c.getBoundingClientRect();c.style.setProperty('--x',(e.clientX-r.left)+'px');c.style.setProperty('--y',(e.clientY-r.top)+'px')})});
 document.getElementById('f').addEventListener('submit',function(x){x.preventDefault();var n=document.getElementById('n').value,e=document.getElementById('e').value,m=document.getElementById('m').value;location.href='mailto:awshameed.dev@gmail.com?subject='+encodeURIComponent('Portfolio message from '+n)+'&body='+encodeURIComponent(m+'\n\nReply to: '+e)});
 document.getElementById('t').addEventListener('click',function(){var r=document.documentElement,l=r.getAttribute('data-theme')==='light'||(!r.getAttribute('data-theme')&&matchMedia('(prefers-color-scheme: light)').matches);r.setAttribute('data-theme',l?'dark':'light')});
-document.getElementById('cv').addEventListener('click',function(x){x.preventDefault();alert('Add your resume link here.')});
 </script>
 </body>
 </html>

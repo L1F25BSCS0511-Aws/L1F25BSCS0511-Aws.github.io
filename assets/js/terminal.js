@@ -32,10 +32,9 @@
 
     about: () => `
 <span class="text-purple-400 font-bold">ABOUT AWS HAMEED:</span>
-- <span class="text-slate-200">Role:</span> 3rd-Semester CS Undergraduate & Digital Growth Specialist
-- <span class="text-slate-200">University:</span> University of Central Punjab (UCP), Lahore
-- <span class="text-slate-200">Company:</span> SYNAPSEBIZ (Remote)
-- <span class="text-slate-200">Focus:</span> AI-Integrated Apps, Scalable Linux VPS Deployments, Automated Python Workflows, C++ Systems
+- <span class="text-slate-200">Current Role:</span> Chief Technology Officer @ Evoke Perfume & Digital Growth Specialist @ SYNAPSEBIZ
+- <span class="text-slate-200">University:</span> University of Central Punjab (UCP), Lahore (3rd Semester)
+- <span class="text-slate-200">Focus:</span> Full-Stack Architecture, Scalable VPS Deployments, Automated Python Pipelines, C++ Systems
 - <span class="text-slate-200">Motto:</span> "I turn ideas into working software."
 `,
 
@@ -66,13 +65,22 @@
 
     experience: () => `
 <span class="text-amber-400 font-bold">CAREER HISTORY:</span>
-1. <span class="text-white font-semibold">Digital Growth Specialist</span> @ SYNAPSEBIZ
-   └─ <span class="text-slate-400">Apr 2026 — Present (Remote)</span>
-   └─ Technical data tracking, automated workflows, and platform growth architecture.
+1. <span class="text-white font-semibold">Chief Technology Officer</span> @ Evoke Perfume
+   └─ <span class="text-emerald-400 font-semibold">Nov 2026 — Present (Full-time · On-site, Lahore)</span>
+   └─ Leading technology architecture, e-commerce infrastructure, and automated operations.
 
-2. <span class="text-white font-semibold">AI/ML Intern</span> @ Digitech Offerings
-   └─ <span class="text-slate-400">Apr — Jun 2026 (Remote)</span>
-   └─ Practical ML implementation, automated pipeline evaluation, AI model testing.
+2. <span class="text-white font-semibold">Digital Growth Specialist</span> @ SYNAPSEBIZ
+   └─ <span class="text-slate-400">Apr 2026 — Present · 8 mos (Remote, Islamabad)</span>
+   └─ Technical data tracking, process automation, and platform growth architecture.
+
+3. <span class="text-white font-semibold">AI Intern</span> @ SYNAPSEBIZ
+   └─ <span class="text-slate-400">Aug 2026 — Oct 2026 · 3 mos (Part-time · Remote)</span>
+   └─ Internal AI tooling, Python data pipelines, and LLM automation.
+
+4. <span class="text-white font-semibold">AI/ML Intern</span> @ Digitech Offerings
+   └─ <span class="text-slate-400">Apr — Jun 2026 · 3 mos (Remote, Lahore)</span>
+   └─ Practical ML implementation, model benchmarking, automated pipelines.
+   └─ <a href="https://www.linkedin.com/in/awshameeed/overlay/Position/2889102362/treasury/?profileId=ACoAAF8zfHoBFkYU_GcN7cKk_avSfrzDBu3JSvc" target="_blank" class="text-cyan-400 underline">Certificate of Completion Internship ↗</a>
 `,
 
     education: () => `

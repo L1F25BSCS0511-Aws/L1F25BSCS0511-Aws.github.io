@@ -101,7 +101,7 @@ aws-hameed-portfolio/
 │   │   └── audio.js            # Web Audio API sound synthesizer
 │   └── images/
 │       ├── aws-hameed.jpg      # Aws Hameed's portrait photograph
-│       └── favicon.svg         # Modern AH neon monogram favicon
+│       └── favicon.svg         # Modern code symbol favicon
 ├── package.json
 └── README.md
 ```
